@@ -1,7 +1,7 @@
 const { defineFeature, loadFeature } = require("jest-cucumber");
 const feature = loadFeature("./test/features/manage-todo-list.feature");
 
-const PAGE = "http://todomvc.com/examples/react/#/";
+const PAGE = "https://lloyds-chorus-dt3.pegacloud.net/prweb";
 const ENTER_EVENT = "Enter";
 const INPUT_SELECTOR = "section input";
 const TODO_ITEMS_SELECTOR = "ul.todo-list li";

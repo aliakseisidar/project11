@@ -20,7 +20,7 @@
   "jest": {
     "preset": "jest-puppeteer",
     "testMatch": [
-      "**/*.steps.js"
+      "**/login_pega.steps.js"
     ]
   }
 }
