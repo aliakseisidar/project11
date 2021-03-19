@@ -53,9 +53,16 @@ describe('PEGA core', async () => {
     await frame2.waitForSelector('.content-layout.item-3');
     await frame2.click('.content-layout.item-3 button');
     await frame2.waitForSelector('ul#apresults-list')
-    await frame2.waitFor(1000)
+    await frame2.waitFor(100)
     await frame2.click('li[category-header="Binding Authority Agreement"]');
-    await frame2.waitFor(1000)
+    await frame2.waitFor(100)
     await frame2.click('ul#apresults-list>li:nth-child(2)');
+    await frame2.waitFor(100)
+    await frame2.waitForSelector('.content-sub_section.item-5');
+    await frame2.click('.content-sub_section.item-5 button');
+    await frame2.waitFor(100)
+    await frame2.waitForSelector('div#poc0');
+    await frame2.click('div#poc0 li>div');
+    await frame2.waitFor(100)
   }, 60000);
 });
